@@ -1,0 +1,71 @@
+.fleet-detail {
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.fleet-detail--empty {
+  color: var(--text-muted);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.fleet-detail__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.fleet-detail__header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.fleet-detail__status {
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: var(--track-bg);
+  color: var(--text-muted);
+}
+
+.fleet-detail__status--combat {
+  color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.12);
+}
+
+.fleet-detail__status--patrol {
+  color: #51cf66;
+  background: rgba(81, 207, 102, 0.12);
+}
+
+.fleet-detail__location {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.fleet-detail__actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.fleet-detail__btn {
+  background: var(--track-bg);
+  border: 1px solid var(--track-border);
+  color: var(--text-primary);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.fleet-detail__btn--attack {
+  background: rgba(224, 49, 49, 0.15);
+  border-color: #e03131;
+  color: #ff8787;
+}

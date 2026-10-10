@@ -1,0 +1,59 @@
+.stat-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+}
+
+.stat-bar__side {
+  display: flex;
+  flex-direction: column;
+  min-width: 64px;
+  line-height: 1.2;
+}
+
+.stat-bar__side--left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.stat-bar__side--right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.stat-bar__label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.stat-bar__value {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-bar__track {
+  flex: 1;
+  height: 10px;
+  border-radius: 6px;
+  background: var(--track-bg);
+  overflow: hidden;
+  border: 1px solid var(--track-border);
+}
+
+.stat-bar__fill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.4s ease;
+}
+
+.stat-bar--hp .stat-bar__fill { background: linear-gradient(90deg, #2f9e44, #51cf66); }
+.stat-bar--shield .stat-bar__fill { background: linear-gradient(90deg, #0b8c5e, #20c997); }
+.stat-bar--attack .stat-bar__fill { background: linear-gradient(90deg, #e03131, #ff6b6b); }
+.stat-bar--defense .stat-bar__fill { background: linear-gradient(90deg, #f08c00, #ffa94d); }
+.stat-bar--cargo .stat-bar__fill { background: linear-gradient(90deg, #0b8c5e, #20c997); }
+.stat-bar--credits .stat-bar__fill { background: linear-gradient(90deg, #2b8a3e, #40c057); }

@@ -1,0 +1,35 @@
+.economy {
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.economy h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.economy__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.economy__table th {
+  text-align: left;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 8px 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.economy__table td {
+  padding: 10px 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.economy__change--up { color: #51cf66; }
+.economy__change--down { color: #ff6b6b; }
